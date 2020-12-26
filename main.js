@@ -4,11 +4,9 @@ function createWindow () {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
-    frame: false,
-    resizable: true,
-    x: 100, // Left offset of window
-    y: 100, // top offset of window
     transparent: true,
+    frame: false,
+    resizable: false,
     webPreferences: {
       nodeIntegration: true,
       devTools: true,
@@ -16,7 +14,7 @@ function createWindow () {
     }
   })
 
-  win.loadFile('src/index.html')
+  // win.loadFile('src/index.html')
   win.show()
   //win.webContents.openDevTools()
   //win.setMenu(null)
